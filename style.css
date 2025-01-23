@@ -9,15 +9,6 @@ body {
     align-items: center;
 }
 
-
-/* .container {
-    background-color: #e0e7e9;
-    box-shadow: 0.1, 0.1, 0, black;
-    margin: 20px auto;
-    padding: 16px;
-    border-radius: 10px; 
-    border: solid green;
-} */
 .caveat {
     text-align: center;
     font-family: "Caveat", serif;
@@ -26,9 +17,6 @@ body {
     font-style: normal;
     font-size: 60px;
     color: #a3c6c4;
-}
-.caveat::after {
-    background-image: url(assets/curved-arrow-with-broken-line.png);
 }
 
 .sub-container {

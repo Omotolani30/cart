@@ -12,21 +12,31 @@
 </head>
 <body>
     <div class="container col-lg-6 col-10 mx-auto p-lg-4 p-2 shadow-sm rounded-3 mt-lg-5 mt-3">
-        <div>
-            <!-- <img src="assets/shopping-cart.png" alt=""> -->
+        <div class="">
             <h1 class="text-center my-2 caveat">Your Shopping Cart</h1>
         </div>
         <div class="sub-container">
-            <div class="d-flex justify-content-space-between">
+            <div class="d-flex justify-content-space-between gap-2">
                 <input type="text" placeholder="Enter the item name" id="item" class="form-control shadow-none my-2">
-                <button onclick="addItems()" class="btn btn-dark my-1 w-25">Add</button>
+                <button onclick="addItems()" class="btn btn-dark my-2 w-25 h-25">Add</button>
             </div>
-            <div class="my-2" id="showItems"></div>
-            
-            <button onclick="addStartItem()" class="btn btn-dark my-1 w-25">Add an Item to the start</button>
-            <button onclick="removeItems()" class="btn btn-dark my-1 w-25">Delete</button>
-            <button onclick="removeStartItem()" class="btn btn-dark my-1 w-25">Delete Start Item</button>
-            <button onclick="removeAllItems()" class="btn btn-dark my-1 w-25">Delete All Items</button>
+            <div class="my-2">
+                <table class="table">
+                    <thead>
+                        <tr>
+                            <th scope="col">S/N</th>
+                            <th scope="col">Items</th>
+                        </tr>
+                    </thead>
+                    <tbody id="showItems"></tbody>
+                </table>
+            </div>
+            <div class="d-flex gap-2 p-3 mx-auto">
+                <button onclick="addStartItem()" class="btn btn-dark my-1 w-25">Add an Item to the start</button>
+                <button onclick="removeItems()" class="btn btn-dark my-1 w-25">Delete</button>
+                <button onclick="removeStartItem()" class="btn btn-dark my-1 w-25">Delete Start Item</button>
+                <button onclick="removeAllItems()" class="btn btn-dark my-1 w-25">Delete All Items</button>
+            </div>
         </div>
     </div>
     <script src="script.js"></script>

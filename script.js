@@ -22,86 +22,67 @@
 // console.log(allStudents);
 // console.log(allStudents.length);
 
-var allItems = []
+var allItems = [];
+
+// Function to display items
+function displayItems() {
+    item.value = ''
+    const showItems = document.getElementById('showItems');
+    showItems.innerHTML = '';
+    for(i=0; i<allItems.length; i++) {
+        showItems.innerHTML += `
+        <tr>
+        <th scope="row">${i+1}</th>
+        <td>${allItems[i]}</td>
+        </tr>`;
+    }
+}
+
+// add items
 function addItems() {
-    // alert("I am working")
-    // console.log(item.value);
     if (item.value == '') {
         alert("Input cannot be empty")
     } else {
         allItems.push(item.value)
-        document.getElementById('item').value = ''
         // showItems.innerHTML = allItems
-
-        document.getElementById('showItems').innerHTML = ''
-        for(i=0; i<allItems.length; i++) {
-            // console.log(allItems[i]);
-            showItems.innerHTML += `<p class="my-2">${i+1}. ${allItems[i]}</p>`
-        }
-        console.log(allItems);
+        displayItems();
+        // console.log(allItems);
     }
-   
 }
 
-
+// unshift items
 function addStartItem() {
     item.value = prompt("What item do you wish to add");
     allItems.unshift(item.value)
-    document.getElementById('item').value = ''
-
-    document.getElementById('showItems').innerHTML = ''
-    for(i=0; i<allItems.length; i++) {
-        showItems.innerHTML += `<p class="my-2">${i+1}. ${allItems[i]}</p>`
-    }
-    console.log(allItems);
+    displayItems()
 }
 
-
-
-// delete
+// delete items
 function removeItems() {
-    if (allItems == '') {
+    if (allItems.length === 0) {
         alert('cart is empty')
     } else {
         allItems.pop(item.value)
-
-        document.getElementById('showItems').innerHTML = ''
-        for(i=0; i<allItems.length; i++) {
-            showItems.innerHTML += `<p class="my-2">${i+1}. ${allItems[i]}</p>`
-        }
-        console.log(allItems);
+        displayItems()
     }
 }
 
-// shift
+// shift items
 function removeStartItem() {
-    if (allItems == '') {
+    if (allItems.length === 0) {
         alert('cart is empty')
     } else {
         allItems.shift(item.value)
-
-        document.getElementById('showItems').innerHTML = ''
-        for(i=0; i<allItems.length; i++) {
-            showItems.innerHTML += `<p class="my-2">${i+1}. ${allItems[i]}</p>`
-        }
-        console.log(allItems);
+        displayItems()
     }
 }
 
 // Remove all items
 function removeAllItems() {
-    if (allItems == '') {
+    if (allItems.length === 0) {
         alert('cart is empty')
     } else {
         allItems.splice(0, allItems.length)
-
-        document.getElementById('showItems').innerHTML = ''
-        // for(i=0; i<allItems.length; i++) {
-        //     showItems.innerHTML += `<p class="my-2">${i+1}. ${allItems[i]}</p>`
-        // }
-        console.log(allItems);
+        displayItems()
     }
 }
-
-
-
