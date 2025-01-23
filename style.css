@@ -20,14 +20,11 @@ body {
 }
 
 .sub-container {
-    background-color: #e0e7e9;
+    background-color: #e0e7e99a;
     padding: 32px;
 }
 
 .btn {
-    border: none;
-    border-radius: 5px;
-    background-color: #354849;
-    color: white;
-    padding: 10px;
+    background-color:#354649 !important;
+    color: #fff !important;
 }
