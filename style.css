@@ -3,20 +3,43 @@
 }
 
 body {
-    background-color: rgb(4, 6, 58);
+    /* background-color: rgb(4, 6, 58); */
     display: flex;
     justify-content: center;
     align-items: center;
 }
-.container {
-   background-color: rgb(5, 8, 82);
-   box-shadow: 1, 1, black;
-}
+
+
+/* .container {
+    background-color: #e0e7e9;
+    box-shadow: 0.1, 0.1, 0, black;
+    margin: 20px auto;
+    padding: 16px;
+    border-radius: 10px; 
+    border: solid green;
+} */
 .caveat {
+    text-align: center;
     font-family: "Caveat", serif;
     font-optical-sizing: auto;
     font-weight: 600;
     font-style: normal;
     font-size: 60px;
+    color: #a3c6c4;
+}
+.caveat::after {
+    background-image: url(assets/curved-arrow-with-broken-line.png);
+}
+
+.sub-container {
+    background-color: #e0e7e9;
+    padding: 32px;
+}
+
+.btn {
+    border: none;
+    border-radius: 5px;
+    background-color: #354849;
     color: white;
+    padding: 10px;
 }
