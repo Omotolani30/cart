@@ -16,8 +16,8 @@
             <h1 class="text-center my-2 caveat">Your Shopping Cart</h1>
         </div>
         <div class="sub-container">
-            <div class="d-flex justify-content-space-between gap-2">
-                <input type="text" placeholder="Enter the item name" id="item" class="form-control shadow-none my-2">
+            <div class="d-flex gap-2">
+                <input tgap -2 y-1="text" placeholder="Enter the item name" id="item" class="form-control shadow-none my-2">
                 <button onclick="addItems()" class="btn my-2 w-25">Add</button>
             </div>
             <div class="my-2">
@@ -31,11 +31,11 @@
                     <tbody id="showItems"></tbody>
                 </table>
             </div>
-            <div class="d-flex gap-2 p-3 mx-auto">
-                <button onclick="addStartItem()" class="btn my-1 col-lg-25 col-md-50 col-sm-100">Add an Item to the start</button>
-                <button onclick="removeItems()" class="btn my-1 col-lg-25 col-md-50 col-sm-100">Delete</button>
-                <button onclick="removeStartItem()" class="btn my-1 col-lg-25 col-md-50 col-sm-100">Delete Start Item</button>
-                <button onclick="removeAllItems()" class="btn my-1 col-lg-25 col-md-50 col-sm-100">Delete All Items</button>
+            <div class="d-flex justify-content-center row gap-2 g-1">
+                <button onclick="addStartItem()" class="btn my-2 col-lg-2 col-md-6 col-sm-12">Add an Item to the start</button>
+                <button onclick="removeItems()" class="btn my-2 col-lg-2 col-md-6 col-sm-12">Delete</button>
+                <button onclick="removeStartItem()" class="btn my-2 col-lg-2 col-md-6 col-sm-12">Delete Start Item</button>
+                <button onclick="removeAllItems()" class="btn my-2 col-lg-2 col-md-6 col-sm-12">Delete All Items</button>
             </div>
         </div>
     </div>
